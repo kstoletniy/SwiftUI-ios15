@@ -11,6 +11,7 @@
 		FD13058D2857A5E000CDC141 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13058C2857A5E000CDC141 /* ContentView.swift */; };
 		FD13058F2857A5E000CDC141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD13058E2857A5E000CDC141 /* Assets.xcassets */; };
 		FD1305922857A5E000CDC141 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1305912857A5E000CDC141 /* Preview Assets.xcassets */; };
+		FD881A572857BC7200BD409C /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD881A562857BC7200BD409C /* Styles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		FD13058C2857A5E000CDC141 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD13058E2857A5E000CDC141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD1305912857A5E000CDC141 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD881A562857BC7200BD409C /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				FD13058A2857A5E000CDC141 /* Swift_UI_15App.swift */,
 				FD13058C2857A5E000CDC141 /* ContentView.swift */,
+				FD881A562857BC7200BD409C /* Styles.swift */,
 				FD13058E2857A5E000CDC141 /* Assets.xcassets */,
 				FD1305902857A5E000CDC141 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD881A572857BC7200BD409C /* Styles.swift in Sources */,
 				FD13058D2857A5E000CDC141 /* ContentView.swift in Sources */,
 				FD13058B2857A5E000CDC141 /* Swift_UI_15App.swift in Sources */,
 			);
