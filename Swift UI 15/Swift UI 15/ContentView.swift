@@ -16,26 +16,29 @@ struct ContentView: View {
         .aspectRatio(contentMode: .fit)
         .frame(width: 26.0, height: 26.0)
         .cornerRadius(/*@START_MENU_TOKEN@*/26.0/*@END_MENU_TOKEN@*/)
-      VStack(alignment: .leading) {
-        VStack(alignment: .leading, spacing: 8.0) {
-          Text("Swift UI")
-            .font(.largeTitle)
-            .fontWeight(.bold)
-          Text("20 sections - 3 hours")
-            .font(.footnote)
-            .fontWeight(.semibold)
-        }
-        Text("Build an iOS app for iOS 15 with custom layouts, animations and ...")
+      VStack(alignment: .leading, spacing: 8.0) {
+        Text("Swift UI")
+          .font(.largeTitle)
+          .fontWeight(.bold)
+        Text("20 sections - 3 hours".uppercased())
           .font(.footnote)
-          .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-          .lineLimit(2)
+          .fontWeight(.semibold)
+          .foregroundColor(.secondary)
       }
+      Text("Build an iOS app for iOS 15 with custom layouts, animations and ...")
+        .font(.footnote)
+        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+        .lineLimit(2)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .foregroundColor(.secondary)
     }
     .padding(/*@START_MENU_TOKEN@*/.all, 20.0/*@END_MENU_TOKEN@*/)
+    .padding(.vertical, 20.0)
     .frame(height: 350.0)
-    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("Background")/*@END_MENU_TOKEN@*/)
+    .background(Color("Background"))
     .cornerRadius(/*@START_MENU_TOKEN@*/30.0/*@END_MENU_TOKEN@*/)
-    .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+    .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
+    .padding(.horizontal, 20.0)
   }
 }
 
