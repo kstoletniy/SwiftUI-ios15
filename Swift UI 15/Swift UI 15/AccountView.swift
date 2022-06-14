@@ -11,10 +11,34 @@ struct AccountView: View {
   var body: some View {
     NavigationView {
       List {
+        VStack(spacing: 8) {
+          Image(systemName: "person.crop.circle.badge.checkmark")
+            .symbolVariant(.circle.fill)
+            .font(.system(size: 32))
+            .symbolRenderingMode(.palette)
+            .foregroundStyle(.blue, .blue.opacity(0.3))
+            .padding()
+            .background(Circle().fill(.ultraThinMaterial))
+            .background(
+              Image(systemName: "hexagon")
+                .symbolVariant(.fill)
+                .font(.system(size: 200))
+                .foregroundColor(.blue)
+                .offset(x: -50, y: -100)
+          )
+          Text("Karen").font(.title.weight(.semibold))
+          HStack {
+            Image(systemName: "location")
+            Text("Uruguay").foregroundColor(.secondary)
+          }
+        }
+        .frame(maxWidth: .infinity)
+        .padding()
         Section {
-          Text("Settings")
-          Text("Billing")
-          Text("Help")
+          Label("Settings", systemImage: "gear")
+            .imageScale(.small)
+          Label("Billing", systemImage: "creditcard")
+          Label("Help", systemImage: "questionmark")
         }
         .listRowSeparator(.hidden)
       }
