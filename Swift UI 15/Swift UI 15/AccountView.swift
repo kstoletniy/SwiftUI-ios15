@@ -34,11 +34,7 @@ struct AccountView: View {
         .padding()
         .background(Circle().fill(.ultraThinMaterial))
         .background(
-          Image(systemName: "hexagon")
-            .symbolVariant(.fill)
-            .font(.system(size: 200))
-            .foregroundColor(.blue)
-            .offset(x: -50, y: -100)
+          HexagonView().offset(x: -50, y: -100)
       )
       Text("Karen").font(.title.weight(.semibold))
       HStack {
