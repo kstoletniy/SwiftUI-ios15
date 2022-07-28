@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD0DB8B82892B936004876F4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DB8B72892B936004876F4 /* TabBar.swift */; };
+		FD0DB8BC2892BE50004876F4 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DB8BB2892BE50004876F4 /* TabItem.swift */; };
+		FD0DB8BE2892F8C6004876F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DB8BD2892F8C6004876F4 /* HomeView.swift */; };
 		FD13058B2857A5E000CDC141 /* Swift_UI_15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13058A2857A5E000CDC141 /* Swift_UI_15App.swift */; };
 		FD13058D2857A5E000CDC141 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD13058C2857A5E000CDC141 /* ContentView.swift */; };
 		FD13058F2857A5E000CDC141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD13058E2857A5E000CDC141 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD0DB8B72892B936004876F4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		FD0DB8BB2892BE50004876F4 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		FD0DB8BD2892F8C6004876F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FD1305872857A5E000CDC141 /* Swift UI Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift UI Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD13058A2857A5E000CDC141 /* Swift_UI_15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_UI_15App.swift; sourceTree = "<group>"; };
 		FD13058C2857A5E000CDC141 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +44,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD0DB8BF2892FAFE004876F4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FD0DB8B72892B936004876F4 /* TabBar.swift */,
+				FD13058C2857A5E000CDC141 /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FD0DB8C02892FB16004876F4 /* MainViewa */ = {
+			isa = PBXGroup;
+			children = (
+				FD0DB8BD2892F8C6004876F4 /* HomeView.swift */,
+				FD881A582857C2F900BD409C /* AccountView.swift */,
+			);
+			path = MainViewa;
+			sourceTree = "<group>";
+		};
+		FD0DB8C12892FB3E004876F4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FDAFB3E0285B8D9D003593F3 /* HexagonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FD0DB8C22892FB4C004876F4 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FD881A562857BC7200BD409C /* Styles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		FD0DB8C32892FB76004876F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD0DB8BB2892BE50004876F4 /* TabItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FD13057E2857A5DF00CDC141 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				FD13058A2857A5E000CDC141 /* Swift_UI_15App.swift */,
-				FD13058C2857A5E000CDC141 /* ContentView.swift */,
-				FD881A582857C2F900BD409C /* AccountView.swift */,
-				FDAFB3E0285B8D9D003593F3 /* HexagonView.swift */,
-				FD881A562857BC7200BD409C /* Styles.swift */,
+				FD0DB8BF2892FAFE004876F4 /* Navigation */,
+				FD0DB8C02892FB16004876F4 /* MainViewa */,
+				FD0DB8C12892FB3E004876F4 /* Components */,
+				FD0DB8C22892FB4C004876F4 /* Styles */,
 				FD13058E2857A5E000CDC141 /* Assets.xcassets */,
+				FD0DB8C32892FB76004876F4 /* Models */,
 				FD1305902857A5E000CDC141 /* Preview Content */,
 			);
 			path = "Swift UI 15";
@@ -149,8 +198,11 @@
 				FD881A592857C2F900BD409C /* AccountView.swift in Sources */,
 				FDAFB3E1285B8D9D003593F3 /* HexagonView.swift in Sources */,
 				FD881A572857BC7200BD409C /* Styles.swift in Sources */,
+				FD0DB8B82892B936004876F4 /* TabBar.swift in Sources */,
 				FD13058D2857A5E000CDC141 /* ContentView.swift in Sources */,
+				FD0DB8BE2892F8C6004876F4 /* HomeView.swift in Sources */,
 				FD13058B2857A5E000CDC141 /* Swift_UI_15App.swift in Sources */,
+				FD0DB8BC2892BE50004876F4 /* TabItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
